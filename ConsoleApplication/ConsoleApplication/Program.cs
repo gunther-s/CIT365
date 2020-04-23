@@ -9,11 +9,16 @@ namespace ConsoleApplication {
     {
         static void Main(string[] args)
         {
-            var name = "Gunther";
-            string location = "Rexburg, ID";
+            string name;
+            string location;
 
-            Console.WriteLine($"My name is: {name}");
-            Console.WriteLine($"My location is: {location}");
+            Console.WriteLine("Please enter your name: ");
+            name = Console.ReadLine();
+            Console.WriteLine("Please enter your location: ");
+            location = Console.ReadLine();
+
+            Console.WriteLine($"Your name is: {name}");
+            Console.WriteLine($"Your location is: {location}");
 
             double width, height, woodLength, glassArea;
             Console.Write("Please enter a width in meters: ");

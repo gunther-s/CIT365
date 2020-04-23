@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication
-{
+namespace ConsoleApplication {
     class Program
     {
         static void Main(string[] args)
@@ -18,8 +17,6 @@ namespace ConsoleApplication
 
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
-
-            Console.WriteLine("Hello then");
         }
     }
 }

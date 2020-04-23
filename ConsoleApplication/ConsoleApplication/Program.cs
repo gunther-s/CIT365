@@ -20,11 +20,16 @@ namespace ConsoleApplication {
             Console.WriteLine($"Your name is: {name}");
             Console.WriteLine($"Your location is: {location}");
 
-            var todayDate = DateTime.Now.ToShortDateString();
-            Console.WriteLine($"The current date is:  {todayDate}");
+            var currentDate = DateTime.Now;
+            Console.WriteLine($"The current date is: {currentDate.ToShortDateString()}");
 
             //Christmas
+            var christmas = new DateTime(currentDate.Year, 12, 25);
+            Console.WriteLine($"Christmas is on: {christmas}");
 
+            var timeSpan = christmas - currentDate;
+            var daysUntilChristmas = timeSpan.Days;
+            Console.WriteLine($"Days until Christmas: {timeSpan}");
 
             double width, height, woodLength, glassArea;
             Console.Write("Please enter a width in meters: ");

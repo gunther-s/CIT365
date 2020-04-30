@@ -29,7 +29,7 @@ namespace ConsoleApplication {
 
             var timeSpan = christmas - currentDate;
             var daysUntilChristmas = timeSpan.Days;
-            Console.WriteLine($"Days until Christmas: {timeSpan}");
+            Console.WriteLine($"Days until Christmas: {daysUntilChristmas}");
 
             double width, height, woodLength, glassArea;
             Console.Write("Please enter a width in meters: ");

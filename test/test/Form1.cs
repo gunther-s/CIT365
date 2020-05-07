@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MegaDesk_Schurr
+namespace test
 {
-    public partial class DisplayQuote : Form
+    public partial class Form1 : Form
     {
-        public DisplayQuote()
+        public Form1()
         {
             InitializeComponent();
-
-            //_deskQuote = deskQuote;
         }
     }
 }

@@ -12,14 +12,37 @@ namespace MegaDesk_Schurr
 {
     public partial class AddQuote : Form
     {
-        public AddQuote()
+        private Form _mainMenu;
+
+        public AddQuote(Form mainMenu)
         {
             InitializeComponent();
+
+            _mainMenu = mainMenu;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void AddQuote_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ((Form)this.Tag).Show();
+            _mainMenu.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var desk = new Desk();
+            var desk = new Desk
+            {
+                //Width = deskWidth.Value,
+                //Depth = deskDepth.Value
+            };
+
+            //deskQuote.CustomerName - txtCustomerName.Text;
+
         }
+
+        
     }
 }

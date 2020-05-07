@@ -12,8 +12,9 @@ namespace MegaDesk_Schurr
         public string CustomerName { get; set; }
         public Desk Desk { get; set; }
 
-        public decimal GetQuote()
-        {
-        }
+        //public decimal GetQuote()
+        //{
+           // Desk.set = 32;
+        //}
     }
 }

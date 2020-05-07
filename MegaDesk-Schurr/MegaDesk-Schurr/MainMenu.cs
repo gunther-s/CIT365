@@ -16,5 +16,19 @@ namespace MegaDesk_Schurr
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frmAddQuote = new AddQuote(this);
+            frmAddQuote.Tag = this;
+            frmAddQuote.Show();
+
+            Hide();
+        }
+
+        private void appExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

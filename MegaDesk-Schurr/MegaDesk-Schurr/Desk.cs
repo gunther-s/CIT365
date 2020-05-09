@@ -26,7 +26,7 @@ namespace MegaDesk_Schurr
 
         public int Width { get; set; }
         public int Depth { get; set; }
-        public int NumberOfDrawers { get; set; }
+        public int Drawers { get; set; }
         public DesktopMaterial1 DesktopMaterial { get; set; }
     }
 }

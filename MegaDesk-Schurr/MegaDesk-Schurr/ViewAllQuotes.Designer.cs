@@ -1,6 +1,6 @@
 ﻿namespace MegaDesk_Schurr
 {
-    partial class DisplayQuote
+    partial class ViewAllQuotes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ReturnToMain = new System.Windows.Forms.Button();
+            this.VCExitToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ReturnToMain
+            // VCExitToMain
             // 
-            this.ReturnToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnToMain.Location = new System.Drawing.Point(292, 374);
-            this.ReturnToMain.Name = "ReturnToMain";
-            this.ReturnToMain.Size = new System.Drawing.Size(100, 40);
-            this.ReturnToMain.TabIndex = 0;
-            this.ReturnToMain.Text = "Exit";
-            this.ReturnToMain.UseVisualStyleBackColor = true;
-            this.ReturnToMain.Click += new System.EventHandler(this.ReturnToMain_Click);
+            this.VCExitToMain.Location = new System.Drawing.Point(292, 380);
+            this.VCExitToMain.Name = "VCExitToMain";
+            this.VCExitToMain.Size = new System.Drawing.Size(100, 40);
+            this.VCExitToMain.TabIndex = 0;
+            this.VCExitToMain.Text = "Exit";
+            this.VCExitToMain.UseVisualStyleBackColor = true;
+            this.VCExitToMain.Click += new System.EventHandler(this.VCExitToMain_Click);
             // 
-            // DisplayQuote
+            // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.ReturnToMain);
-            this.Name = "DisplayQuote";
+            this.Controls.Add(this.VCExitToMain);
+            this.Name = "ViewAllQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Display Quote";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DisplayQuote_FormClosed);
+            this.Text = "View Quotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button ReturnToMain;
+        private System.Windows.Forms.Button VCExitToMain;
     }
 }

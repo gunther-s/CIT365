@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace MegaDesk_Schurr
 {
-    public partial class DisplayQuote : Form
+    public partial class ViewAllQuotes : Form
     {
         private Form _mainMenu;
-        public DisplayQuote(Form mainMenu)
+        public ViewAllQuotes(Form mainMenu)
         {
             InitializeComponent();
             _mainMenu = mainMenu;
-
-            //_deskQuote = deskQuote;
         }
 
-        private void ReturnToMain_Click(object sender, EventArgs e)
+        private void VCExitToMain_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void DisplayQuote_FormClosed(object sender, FormClosedEventArgs e)
+        private void ViewAllQuotes_FormClosed(object sender, FormClosedEventArgs e)
         {
             ((Form)this.Tag).Show();
             _mainMenu.Show();

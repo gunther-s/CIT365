@@ -1,6 +1,6 @@
 ﻿namespace MegaDesk_Schurr
 {
-    partial class DisplayQuote
+    partial class SearchQuotes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ReturnToMain = new System.Windows.Forms.Button();
+            this.SQExitToMain = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ReturnToMain
+            // SQExitToMain
             // 
-            this.ReturnToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnToMain.Location = new System.Drawing.Point(292, 374);
-            this.ReturnToMain.Name = "ReturnToMain";
-            this.ReturnToMain.Size = new System.Drawing.Size(100, 40);
-            this.ReturnToMain.TabIndex = 0;
-            this.ReturnToMain.Text = "Exit";
-            this.ReturnToMain.UseVisualStyleBackColor = true;
-            this.ReturnToMain.Click += new System.EventHandler(this.ReturnToMain_Click);
+            this.SQExitToMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SQExitToMain.Location = new System.Drawing.Point(302, 383);
+            this.SQExitToMain.Name = "SQExitToMain";
+            this.SQExitToMain.Size = new System.Drawing.Size(80, 30);
+            this.SQExitToMain.TabIndex = 0;
+            this.SQExitToMain.Text = "Exit";
+            this.SQExitToMain.UseVisualStyleBackColor = true;
+            this.SQExitToMain.Click += new System.EventHandler(this.SQExitToMain_Click);
             // 
-            // DisplayQuote
+            // SearchQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.ReturnToMain);
-            this.Name = "DisplayQuote";
+            this.Controls.Add(this.SQExitToMain);
+            this.Name = "SearchQuotes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Display Quote";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DisplayQuote_FormClosed);
+            this.Text = "Search Quotes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SearchQuotes_FormClosed);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button ReturnToMain;
+        private System.Windows.Forms.Button SQExitToMain;
     }
 }

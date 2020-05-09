@@ -17,7 +17,7 @@ namespace MegaDesk_Schurr
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddQuotes_Click(object sender, EventArgs e)
         {
             var frmAddQuote = new AddQuote(this);
             frmAddQuote.Tag = this;
@@ -25,8 +25,25 @@ namespace MegaDesk_Schurr
 
             Hide();
         }
+        private void ViewQuotes_Click(object sender, EventArgs e)
+        {
+            var frmViewAllQuotes = new ViewAllQuotes(this);
+            frmViewAllQuotes.Tag = this;
+            frmViewAllQuotes.Show();
 
-        private void appExit_Click(object sender, EventArgs e)
+            Hide();
+        }
+
+        private void SeachQuotes_Click(object sender, EventArgs e)
+        {
+            var frmSearchQuotes = new SearchQuotes(this);
+            frmSearchQuotes.Tag = this;
+            frmSearchQuotes.Show();
+
+            Hide();
+        }
+
+        private void AppExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -2,13 +2,10 @@
 
 namespace test1
 {
-    class Program
+    enum Test { A, B, C = 5, D };
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            int x = 4; int y = 9;
-            x = (y % x != 0) ? y / x : y;
-            Console.WriteLine(x);
-        }
+        int x = (int)Test.D;
+        Console.WriteLine(x);
     }
 }

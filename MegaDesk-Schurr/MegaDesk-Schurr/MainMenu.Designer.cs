@@ -28,59 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.appExit = new System.Windows.Forms.Button();
-            this.viewQuotes = new System.Windows.Forms.Button();
-            this.seachQuotes = new System.Windows.Forms.Button();
+            this.AddQuotes = new System.Windows.Forms.Button();
+            this.AppExit = new System.Windows.Forms.Button();
+            this.ViewQuotes = new System.Windows.Forms.Button();
+            this.SeachQuotes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // AddQuotes
             // 
-            this.button1.Location = new System.Drawing.Point(57, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Create Quote";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddQuotes.Location = new System.Drawing.Point(57, 44);
+            this.AddQuotes.Name = "AddQuotes";
+            this.AddQuotes.Size = new System.Drawing.Size(137, 60);
+            this.AddQuotes.TabIndex = 0;
+            this.AddQuotes.Text = "Create Quote";
+            this.AddQuotes.UseVisualStyleBackColor = true;
+            this.AddQuotes.Click += new System.EventHandler(this.AddQuotes_Click);
             // 
-            // appExit
+            // AppExit
             // 
-            this.appExit.Location = new System.Drawing.Point(107, 394);
-            this.appExit.Name = "appExit";
-            this.appExit.Size = new System.Drawing.Size(75, 23);
-            this.appExit.TabIndex = 1;
-            this.appExit.Text = "Exit";
-            this.appExit.UseVisualStyleBackColor = true;
-            this.appExit.Click += new System.EventHandler(this.appExit_Click);
+            this.AppExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AppExit.Location = new System.Drawing.Point(57, 349);
+            this.AppExit.Name = "AppExit";
+            this.AppExit.Size = new System.Drawing.Size(137, 30);
+            this.AppExit.TabIndex = 1;
+            this.AppExit.Text = "Exit";
+            this.AppExit.UseVisualStyleBackColor = true;
+            this.AppExit.Click += new System.EventHandler(this.AppExit_Click);
             // 
-            // viewQuotes
+            // ViewQuotes
             // 
-            this.viewQuotes.Location = new System.Drawing.Point(57, 131);
-            this.viewQuotes.Name = "viewQuotes";
-            this.viewQuotes.Size = new System.Drawing.Size(75, 23);
-            this.viewQuotes.TabIndex = 2;
-            this.viewQuotes.Text = "View Quotes";
-            this.viewQuotes.UseVisualStyleBackColor = true;
+            this.ViewQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ViewQuotes.Location = new System.Drawing.Point(57, 131);
+            this.ViewQuotes.Name = "ViewQuotes";
+            this.ViewQuotes.Size = new System.Drawing.Size(137, 60);
+            this.ViewQuotes.TabIndex = 2;
+            this.ViewQuotes.Text = "View Quotes";
+            this.ViewQuotes.UseVisualStyleBackColor = true;
+            this.ViewQuotes.Click += new System.EventHandler(this.ViewQuotes_Click);
             // 
-            // seachQuotes
+            // SeachQuotes
             // 
-            this.seachQuotes.Location = new System.Drawing.Point(57, 221);
-            this.seachQuotes.Name = "seachQuotes";
-            this.seachQuotes.Size = new System.Drawing.Size(100, 23);
-            this.seachQuotes.TabIndex = 3;
-            this.seachQuotes.Text = "Search Quotes";
-            this.seachQuotes.UseVisualStyleBackColor = true;
+            this.SeachQuotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeachQuotes.Location = new System.Drawing.Point(57, 221);
+            this.SeachQuotes.Name = "SeachQuotes";
+            this.SeachQuotes.Size = new System.Drawing.Size(137, 60);
+            this.SeachQuotes.TabIndex = 3;
+            this.SeachQuotes.Text = "Search Quotes";
+            this.SeachQuotes.UseVisualStyleBackColor = true;
+            this.SeachQuotes.Click += new System.EventHandler(this.SeachQuotes_Click);
             // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.seachQuotes);
-            this.Controls.Add(this.viewQuotes);
-            this.Controls.Add(this.appExit);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.SeachQuotes);
+            this.Controls.Add(this.ViewQuotes);
+            this.Controls.Add(this.AppExit);
+            this.Controls.Add(this.AddQuotes);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MegaDesk - Schurr";
@@ -90,10 +96,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button appExit;
-        private System.Windows.Forms.Button viewQuotes;
-        private System.Windows.Forms.Button seachQuotes;
+        private System.Windows.Forms.Button AddQuotes;
+        private System.Windows.Forms.Button AppExit;
+        private System.Windows.Forms.Button ViewQuotes;
+        private System.Windows.Forms.Button SeachQuotes;
     }
 }
 

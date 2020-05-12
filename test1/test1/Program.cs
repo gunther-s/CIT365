@@ -1,11 +1,10 @@
 ﻿using System;
+using System.Collections;
 
 namespace test1
 {
-    enum Test { A, B, C = 5, D };
-    static void Main(string[] args)
+    class Test1
     {
-        int x = (int)Test.D;
-        Console.WriteLine(x);
+
     }
 }

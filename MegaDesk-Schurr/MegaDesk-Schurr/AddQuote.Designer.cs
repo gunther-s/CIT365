@@ -41,7 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ComboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
@@ -214,22 +214,16 @@
             this.numericUpDown1.Size = new System.Drawing.Size(52, 24);
             this.numericUpDown1.TabIndex = 14;
             // 
-            // comboBox1
+            // ComboBox1
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Laminate",
-            "Oak",
-            "Pine",
-            "Rosewood",
-            "Veneer"});
-            this.comboBox1.Location = new System.Drawing.Point(486, 195);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.Sorted = true;
-            this.comboBox1.TabIndex = 15;
+            this.ComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
+            this.ComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboBox1.FormattingEnabled = true;
+            this.ComboBox1.Location = new System.Drawing.Point(486, 195);
+            this.ComboBox1.Name = "ComboBox1";
+            this.ComboBox1.Size = new System.Drawing.Size(121, 21);
+            this.ComboBox1.Sorted = true;
+            this.ComboBox1.TabIndex = 15;
             // 
             // label6
             // 
@@ -263,7 +257,7 @@
             this.ClientSize = new System.Drawing.Size(684, 461);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ComboBox1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -303,7 +297,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ComboBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox2;
     }

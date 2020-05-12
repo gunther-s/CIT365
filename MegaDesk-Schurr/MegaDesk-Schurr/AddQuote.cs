@@ -20,6 +20,12 @@ namespace MegaDesk_Schurr
             InitializeComponent();
 
             _mainMenu = mainMenu;
+
+            List<DesktopMaterial> materials = Enum.GetValues(typeof(DesktopMaterial)).Cast<DesktopMaterial>().ToList();
+
+            ComboBox1.DataSource = materials;
+
+            ComboBox1.SelectedIndex = -1;
         }
         
         private void button2_Click(object sender, EventArgs e)

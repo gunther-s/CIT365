@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_Schurr
 {
-    public enum DesktopMaterial1
+    public enum DesktopMaterial
     {
         Laminate,
         Oak,
@@ -27,6 +27,6 @@ namespace MegaDesk_Schurr
         public int Width { get; set; }
         public int Depth { get; set; }
         public int Drawers { get; set; }
-        public DesktopMaterial1 DesktopMaterial { get; set; }
+        public DesktopMaterial DesktopMaterial { get; set; }
     }
 }

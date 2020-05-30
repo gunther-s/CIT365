@@ -20,6 +20,9 @@ namespace ConsoleApplication {
             Console.WriteLine($"Your name is: {name}");
             Console.WriteLine($"Your location is: {location}");
 
+            int randNum = new Random().Next(50, 100);
+            Console.WriteLine(randNum);
+
             var currentDate = DateTime.Now;
             Console.WriteLine($"The current date is: {currentDate.ToShortDateString()}");
 
